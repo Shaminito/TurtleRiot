@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fotos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nev_gotos" />
+        <item
+            android:id="@+id/nav_config"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/vc_congif" />
+    </group>
+
+    <item android:title="@string/com">
+        <menu>
+            <item
+                android:id="@+id/nav_compa"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/vc_com" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

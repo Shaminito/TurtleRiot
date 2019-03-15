@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flAcciones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turtleriot.PlayasFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivPlayas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/tortugamarcaagua"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPlayas"
+            android:text="@string/txt_tvPlayas"
+            android:textAlignment="center"
+            style="@style/text_format"
+            android:textColor="@color/color_hint"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textColor_Whiite">#ffffff</color>
+    <color name="color_btnSignIn">#58D0E1</color>
+    <color name="color_hint">#aaaaaa</color>
+    <color name="color_scroll">#e4e4e4</color>
+    <color name="textColor_selected">#aaaaaa</color>
+    <color name="color_txt_crearAcciones">#dd5935</color>
+</resources>

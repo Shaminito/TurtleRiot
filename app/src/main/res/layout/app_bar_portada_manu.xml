@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turtleriot.PortadaManuActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:theme="@style/Theme.Design.Light"
+        app:expanded="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/fondo2"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo3"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabTextAppearance="@style/MyTabLayout">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiAcciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/accion"
+                android:text="@string/txt_tvAcciones" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiAdvertencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/advertencia"
+                android:text="@string/txt_tvAdvertencia" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiPlayas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/playa"
+                android:text="@string/txt_tvPlayas" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiIr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ir"
+                android:text="@string/txt_tvIr" />
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:id="@+id/rlFragmentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/ivBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/tortugamarcaagua" />
+
+        <TextView
+            android:id="@+id/tvBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivBienvenido"
+            android:fontFamily="@font/life_s_a_beach_thin"
+            android:text="@string/texBienbenido"
+            android:textAlignment="center"
+            android:textColor="@color/color_hint"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBienUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBienvenido"
+            android:fontFamily="@font/life_s_a_beach_thin"
+            android:textAlignment="center"
+            android:textColor="@color/color_hint"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
